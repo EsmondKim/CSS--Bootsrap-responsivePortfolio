@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Esmond Kim</title>
+    <style type="text/css">
+        body {
+          background-image: url("Assets/Images/faint-cubes.png");
+        }
+      </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
 <!-- Nav Header. -->
-<div class="row">
+<div class="row ">
     <nav class="col-xl-12">
-        <ul class="nav justify-content-end">
-            <h3 class="col-xl-9">Esmond Y. Kim</h3>
-            <li class="nav-item"></li>  
-              <a class="nav-link active" href="#">Contact</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-             </li>
-        </ul>
+      <ul class="nav justify-content-end bg-dark">
+        <h3 class="col-xl-9 text-primary" style="font-family: 'Lucida Console', Verdana, Arial">Esmond Y. Kim</h3>
+        <li class="nav-item"></li>  
+          <a class="nav-link active text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">Contact</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">Portfolio</a>
+         </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">About</a>
+         </li>
+      </ul>
     </nav>
-</div>
+  </div>
 
  <!-- Blank row. -->
+ <div class = container>
  <div class="row">
     <div class="col-xl-12">
       <br>
@@ -35,102 +41,45 @@
   </div>
 
 <!-- Card goes here. -->
-<!--Section: Contact v.2-->
-<section class="mb-4">
-
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
-
+<form>
     <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
+        <div class="col-md-4">
+        <h2 class="text-primary" style="font-family: 'Lucida Console', Verdana, Arial">Contact</h2>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 01 234 567 89</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
     </div>
 
-</section>
-<!--Section: Contact v.2-->
+    <div class="row">
+        <div class="col-md-4">
+    <div class="form-group" >
+        <label for="exampleFormControlInput1">Name</label>
+        <input class="form-control" id="exampleFormControlTextarea1">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Message</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+<!-- Submit button here.-->
+
+<button class="btn btn-primary" type="submit">Submit</button>
+
+  </form>
 
 <!-- Card goes here. -->
 
@@ -148,10 +97,11 @@
   <!-- ADD HREF LINK TO GO TO ABOUT PAGE!!  -->  
   <div class="fixed-bottom"> 
     <div class="footer-margin">
-      <footer class="card-footer bg-dark footer-font-style text-muted footer-position"><a href="">About Esmond Kim</a>
+      <footer class="card-footer bg-dark footer-font-style text-muted footer-position" style="font-family: 'Lucida Console', Verdana, Arial"><a href="">About Esmond Kim</a>
       </footer>
     </div>
   </div>
 
+</div>
 </body>
 </html>
