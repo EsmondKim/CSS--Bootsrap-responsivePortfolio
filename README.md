@@ -7,3 +7,5 @@ To create the "sticky footer" I used the following website https://medium.com/@j
   </div>
 </div>
 of Joe Cardillo.
+
+Contact form uses some elements from the following webpage: https://mdbootstrap.com/docs/jquery/forms/contact/
