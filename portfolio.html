@@ -8,6 +8,22 @@
       body {
         background-image: url("Assets/Images/faint-cubes.png");
       }
+
+      @media-breakpoint-onlyxs {
+        .column {
+        width: 25%;
+        margin-left: 75px;
+        margin-right: 75px;  
+          }
+      }
+
+      @media-breakpoint-onlysm {
+        .column {
+        width: 25%;
+        margin-left: 75px;
+        margin-right: 75px;  
+        }
+      }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
@@ -16,21 +32,21 @@
 <div class="row ">
   <nav class="col-xl-12">
     <ul class="nav justify-content-end bg-dark">
-      <h3 class="col-xl-9 text-primary" style="font-family: 'Lucida Console', Verdana, Arial">Esmond Y. Kim</h3>
+    <h3 class="col-xl-9 text-primary" style="font-family: Verdana, Arial, 'Lucida Console'">Esmond Y. Kim</h3>
       <li class="nav-item"></li>  
-        <a class="nav-link active text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">Contact</a>
+        <a class="nav-link active text-primary" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
         </li>
       <li class="nav-item">
-        <a class="nav-link text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">Portfolio</a>
-       </li>
+        <a class="nav-link text-primary" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
+        </li>
       <li class="nav-item">
-        <a class="nav-link text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">About</a>
-       </li>
+        <a class="nav-link text-primary" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
+        </li>
     </ul>
   </nav>
 </div>
-  
-  <div class = container>
+
+  <div class="container" @include media-breakpoint-only(sm) @include media-breakpoint-only(xs)>
   <!-- Blank row. -->
   <div class="row">
     <div class="col-xl-12">
@@ -42,7 +58,7 @@
 
 <!-- Portfolio card. -->
 <div class="card" style="width: 18rem;">
-    <h2 class=text-primary style="font-family: 'Lucida Console', Verdana, Arial">Portfolio</h2>
+    <h2 class=text-primary style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</h2>
     <img class="card-img-top" src="https://via.placeholder.com/150/000000/FFFFFF/?text=Coming Soon" alt="Card image cap">
     <div class="card-body">
       <p class="card-text">Portfolio projects coming soon.</p>
@@ -69,14 +85,13 @@
 </html>
 
 <!-- Footer goes here.  --> 
-  <!-- ADD HREF LINK TO GO TO ABOUT PAGE!!  -->  
-  <div class="fixed-bottom"> 
-    <div class="footer-margin">
-      <footer class="card-footer bg-dark footer-font-style text-muted footer-position" style="font-family: 'Lucida Console', Verdana, Arial"><a href="">About Esmond Kim</a>
-      </footer>
-    </div>
-  </div>
+<!-- Some footer code taken from website https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7.  --> 
+<!-- Retrieved on 10/09/20.-->
+<!-- This article informed me that the class="fixed-bottom" and class="footer-margin" were available to create a sticky footer.  -->
+<div class="fixed-bottom footer-margin"> 
+  <footer class="card-footer bg-dark footer-font-style text-muted footer-position" style="font-family: Verdana, Arial, 'Lucida Console'"><a href="index.html">About Esmond Kim</a>
+   </footer>
+ </div>
 
-    </div>
   </body>
 </html>

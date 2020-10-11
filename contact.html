@@ -8,6 +8,22 @@
         body {
           background-image: url("Assets/Images/faint-cubes.png");
         }
+
+        @media-breakpoint-onlyxs {
+        .column {
+        width: 25%;
+        margin-left: 75px;
+        margin-right: 75px;  
+          }
+      }
+
+      @media-breakpoint-onlysm {
+        .column {
+        width: 25%;
+        margin-left: 75px;
+        margin-right: 75px;  
+        }
+      }
       </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
@@ -16,92 +32,87 @@
 <div class="row ">
     <nav class="col-xl-12">
       <ul class="nav justify-content-end bg-dark">
-        <h3 class="col-xl-9 text-primary" style="font-family: 'Lucida Console', Verdana, Arial">Esmond Y. Kim</h3>
+      <h3 class="col-xl-9 text-primary" style="font-family: Verdana, Arial, 'Lucida Console'">Esmond Y. Kim</h3>
         <li class="nav-item"></li>  
-          <a class="nav-link active text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">Contact</a>
+          <a class="nav-link active text-primary" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
           </li>
         <li class="nav-item">
-          <a class="nav-link text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">Portfolio</a>
-         </li>
+          <a class="nav-link text-primary" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
+          </li>
         <li class="nav-item">
-          <a class="nav-link text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">About</a>
-         </li>
+          <a class="nav-link text-primary" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
+          </li>
       </ul>
     </nav>
   </div>
-
- <!-- Blank row. -->
- <div class = container>
- <div class="row">
-    <div class="col-xl-12">
-      <br>
-      <p> </p>
-      <br>
-    </div>
-  </div>
-
+  
+ <div class="container" @include media-breakpoint-only(sm) @include media-breakpoint-only(xs)>
 <!-- Card goes here. -->
 <form>
     <div class="row">
         <div class="col-md-4">
-        <h2 class="text-primary" style="font-family: 'Lucida Console', Verdana, Arial">Contact</h2>
+        <h2 class="text-primary" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</h2>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-4">
-    <div class="form-group" >
-        <label for="exampleFormControlInput1">Name</label>
-        <input class="form-control" id="exampleFormControlTextarea1">
+        <div class="form-group" >
+            <label for="exampleFormControlInput1">Name</label>
+            <input class="form-control" id="exampleFormControlTextarea1">
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-4">
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Email</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ekelectronicmail@gmail.com">
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-4">
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Message</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
         </div>
     </div>
 
 <!-- Submit button here.-->
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
 
-<button class="btn btn-primary" type="submit">Submit</button>
-
-  </form>
-
-<!-- Card goes here. -->
-
-
- <!-- Blank row. -->
- <div class="row">
+<!-- Blank row. -->
+<div class="row">
     <div class="col-xl-12">
       <br>
       <p> </p>
       <br>
     </div>
+</div>
+
+<!-- Contact card goes here. -->
+<div class="card" style="width: 22rem;">
+    <ul class="list-group list-group-flush">
+      <a href="mailto:ekelectronicmail@gmail.com" li class="list-group-item">email: ekelectronicmail@gmail.com</a></li>
+      <a href="https://www.linkedin.com/in/esmondkim/" li class="list-group-item">LinkedIn Profile</a></li>
+      <a href="https://www.facebook.com/EsmondYKimatE.Y.K.LAWLLC/" li class="list-group-item">Find Me On Facebook</a></li>
+    </ul>
   </div>
 
 <!-- Footer goes here.  --> 
-  <!-- ADD HREF LINK TO GO TO ABOUT PAGE!!  -->  
-  <div class="fixed-bottom"> 
-    <div class="footer-margin">
-      <footer class="card-footer bg-dark footer-font-style text-muted footer-position" style="font-family: 'Lucida Console', Verdana, Arial"><a href="">About Esmond Kim</a>
-      </footer>
-    </div>
-  </div>
+<!-- Some footer code taken from website https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7.  --> 
+<!-- Retrieved on 10/09/20.-->
+<!-- This article informed me that the class="fixed-bottom" and class="footer-margin" were available to create a sticky footer.  -->
+<div class="fixed-bottom footer-margin"> 
+    <footer class="card-footer bg-dark footer-font-style text-muted footer-position" style="font-family: Verdana, Arial, 'Lucida Console'"><a href="index.html">About Esmond Kim</a>
+     </footer>
+   </div>
 
-</div>
-</body>
+        </div>
+    </body>
 </html>

@@ -8,6 +8,22 @@
       body {
         background-image: url("Assets/Images/faint-cubes.png");
       }
+
+      @media-breakpoint-onlyxs {
+        .column {
+        width: 50%;
+        margin-left: 75px;
+        margin-right: 75px;  
+          }
+      }
+
+      @media-breakpoint-onlysm {
+        .column {
+        width: 50%;
+        margin-left: 75px;
+        margin-right: 75px;  
+        }
+      }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
@@ -16,72 +32,63 @@
      <div class="row ">
       <nav class="col-xl-12">
         <ul class="nav justify-content-end bg-dark">
-          <h3 class="col-xl-9 text-primary" style="font-family: 'Lucida Console', Verdana, Arial">Esmond Y. Kim</h3>
+        <h3 class="col-xl-9 text-primary" style="font-family: Verdana, Arial, 'Lucida Console'">Esmond Y. Kim</h3>
           <li class="nav-item"></li>  
-            <a class="nav-link active text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">Contact</a>
+            <a class="nav-link active text-primary" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
             </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">Portfolio</a>
-           </li>
+            <a class="nav-link text-primary" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
+            </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#" style="font-family: 'Lucida Console', Verdana, Arial">About</a>
-           </li>
+            <a class="nav-link text-primary" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
+            </li>
         </ul>
       </nav>
     </div>
     
-  <div class="container">
-  <!-- Blank row. -->
+  <div class="container" @include media-breakpoint-only(sm) @include media-breakpoint-only(xs)>
+
+<!-- Blank row. -->
   <div class="row">
     <div class="col-xl-12">
-      <br>
-      <p> </p>
-      <br>
+    <br>
+    <p> </p>
+    <br>
     </div>
   </div>
 
-  <!-- Card goes here. -->
-  <div class="row">
-    <section class="col-sm-9" class="card">
-      <div class="card-header text-primary">
-        <h2 style="font-family: 'Lucida Console', Verdana, Arial">About Me</h2>
-      </div>
-      <div class="card-body">
-        <div class="row">
-      <img class="col-sm-3" src="Assets/Images/EsmondYKimProfile.JPG" alt="Picture of Esmond Y. Kim" style="width:200px;height:200px;">
-      <p class="col-sm-9" class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+<!-- Card goes here. -->
+    <div class="row">
+      <section class="col-sm-9" class="card">
+        <div class="card-header text-primary">
+          <h2 style="font-family: Verdana, Arial, 'Lucida Console'">About Me</h2>
         </div>
+        <div class="card-body">
+          <div class="row">
+            <img class="col-sm-3" src="Assets/Images/EsmondYKimProfile.JPG" alt="Picture of Esmond Y. Kim" style="width:175px;height:200px;">
+            <p class="col-sm-9">I'm an attorney, and I'm transitioning to the computer programming field. I've spent the last 13 years as an attorney. It was amazing to learn how legal code shapes societies. Now, I am excited to learn how computer code shapes our world. I suspect this journey will be every bit as impactful and transformative as my last one. Specifically, it would be exciting to start a coding career as a Jr. Web or Software Developer because I enjoy working with code and solving problems.</p>
+            <p class="col-sm-12">I've spent a good amount of time the past few years really getting to know myself. So, I can say, I know that as a web developer or computer programmer I will find opportunities where I can do good, fulfilling work. I know I'll find environments where I can be myself while working with others to make everyone's life more logical, more intuitive, more meaningful, less stressful and easier to live. Perhaps working with computers can even make the world more, if even marginally, egalitarian, just, stable, safe, secure, and thereby kinder and happier.</p>  
       </div>
+    </div>
 
-      <div class="row">
-        <p class="col-sm-12">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>  
+<!-- Blank row. -->
+    <div class="row">
+      <div class="col-xl-12">
+        <br>
+        <p> </p>
+        <br>
       </div>
     </div>
-    </div>
-  </div>
-
-  <!-- Blank row. -->
-  <div class="row">
-    <div class="col-xl-12">
-      <br>
-      <p> </p>
-      <br>
-    </div>
-  </div>
 
   <!-- Footer goes here.  --> 
-  <!-- Some footer code taken from website https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7.  --> 
-  <!-- Retrieved on 10/09/20.-->
-  <!-- This article informed me that the class="fixed-bottom" and class="footer-margin" were available to create a sticky footer.  -->
-  
-  <!-- ADD HREF LINK TO GO TO ABOUT PAGE!!  -->  
-  <div class="fixed-bottom"> 
-    <div class="footer-margin">
-      <footer class="card-footer bg-dark footer-font-style text-muted footer-position" style="font-family: 'Lucida Console', Verdana, Arial"><a href="">About Esmond Kim</a>
+  <!-- Some footer code taken from website https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7. --> 
+  <!-- Retrieved on 10/09/20. -->
+  <!-- This article informed me that the class="fixed-bottom" and class="footer-margin" were available to create a sticky footer. -->
+    <div class="fixed-bottom footer-margin"> 
+     <footer class="card-footer bg-dark footer-font-style text-muted footer-position" style="font-family: Verdana, Arial, 'Lucida Console'"><a href="index.html">About Esmond Kim</a>
       </footer>
     </div>
-  </div>
-
-</div>
-</body>
+    
+    </div>
+  </body>
 </html>
