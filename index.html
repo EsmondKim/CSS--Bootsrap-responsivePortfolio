@@ -8,22 +8,6 @@
       body {
         background-image: url("Assets/Images/faint-cubes.png");
       }
-
-      @media-breakpoint-onlyxs {
-        .column {
-        width: 50%;
-        margin-left: 75px;
-        margin-right: 75px;  
-          }
-      }
-
-      @media-breakpoint-onlysm {
-        .column {
-        width: 50%;
-        margin-left: 75px;
-        margin-right: 75px;  
-        }
-      }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
@@ -42,15 +26,15 @@
           <li class="nav-item">
             <a class="nav-link text-primary" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
             </li>
-        </ul>
+        </ul> 
       </nav>
     </div>
     
-  <div class="container" @include media-breakpoint-only(sm) @include media-breakpoint-only(xs)>
+  <div class="container">
 
 <!-- Blank row. -->
   <div class="row">
-    <div class="col-xl-12">
+    <div class="col-xl-12 col-md-6 col-xs-6">
     <br>
     <p> </p>
     <br>
@@ -59,21 +43,21 @@
 
 <!-- Card goes here. -->
     <div class="row">
-      <section class="col-sm-9" class="card">
+      <section class="col-xl-9 col-sm-9 col-xs-9" class="card">
         <div class="card-header text-primary">
           <h2 style="font-family: Verdana, Arial, 'Lucida Console'">About Me</h2>
         </div>
-        <div class="card-body">
-          <div class="row">
-            <img class="col-sm-3" src="Assets/Images/EsmondYKimProfile.JPG" alt="Picture of Esmond Y. Kim" style="width:175px;height:200px;">
-            <p class="col-sm-9">I'm an attorney, and I'm transitioning to the computer programming field. I've spent the last 13 years as an attorney. It was amazing to learn how legal code shapes societies. Now, I am excited to learn how computer code shapes our world. I suspect this journey will be every bit as impactful and transformative as my last one. Specifically, it would be exciting to start a coding career as a Jr. Web or Software Developer because I enjoy working with code and solving problems.</p>
-            <p class="col-sm-12">I've spent a good amount of time the past few years really getting to know myself. So, I can say, I know that as a web developer or computer programmer I will find opportunities where I can do good, fulfilling work. I know I'll find environments where I can be myself while working with others to make everyone's life more logical, more intuitive, more meaningful, less stressful and easier to live. Perhaps working with computers can even make the world more, if even marginally, egalitarian, just, stable, safe, secure, and thereby kinder and happier.</p>  
-      </div>
+        <div class="card-body">  
+          <img class="col-xl-3 col-md-3 col-xs-3" style="float: left" src="Assets/Images/EsmondYKimProfile.JPG" alt="Picture of Esmond Y. Kim" style="width:175px;height:200px;">
+            <p class="col-xl-9 col-md-9 col-xs-9" style="float: left">I'm an attorney, and I'm transitioning to the computer programming field. I've spent the last 13 years as an attorney. It was amazing to learn how legal code shapes societies. Now, I am excited to learn how computer code shapes our world. I suspect this journey will be every bit as impactful and transformative as my last one. Specifically, it would be exciting to start a coding career as a Jr. Web or Software Developer because I enjoy working with code and solving problems.</p>
+              <p class="col-xl-9 col-md-9 col-xs-9" style="float: left">I've spent a good amount of time the past few years really getting to know myself. So, I can say, I know that as a web developer or computer programmer I will find opportunities where I can do good, fulfilling work. I know I'll find environments where I can be myself while working with others to make everyone's life more logical, more intuitive, more meaningful, less stressful and easier to live. Perhaps working with computers can even make the world more, if even marginally, egalitarian, just, stable, safe, secure, and thereby kinder and happier.</p>  
+          </div>
+       </div>
     </div>
 
 <!-- Blank row. -->
     <div class="row">
-      <div class="col-xl-12">
+      <div class="col-xl-12 col-md-6 col-xs-6">
         <br>
         <p> </p>
         <br>
