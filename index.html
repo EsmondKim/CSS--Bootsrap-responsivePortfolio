@@ -12,23 +12,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-     <!-- Nav Header. Outside of container to span the screen. -->
-     <div class="row ">
-      <nav class="col-xl-12">
-        <ul class="nav justify-content-end bg-dark">
-        <h3 class="col-xl-9 text-primary" style="font-family: Verdana, Arial, 'Lucida Console'">Esmond Y. Kim</h3>
-          <li class="nav-item"></li>  
-            <a class="nav-link active text-primary" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
-            </li>
-        </ul> 
-      </nav>
-    </div>
+<!-- Nav Header. Outside of container to span the screen. -->
+<!-- W3 Validator throws errors for use of <h3> element in ul and lack of li elements,
+however, this code was used to utilize the appropriate bootstrap nav bar and to have 
+name displayed in the nav header. -->
+<div class="row ">
+  <nav class="col-xl-12">
+    <ul class="nav justify-content-end bg-dark">
+      <h3 class="col-xl-9 text-primary" style="font-family: Verdana, Arial, 'Lucida Console'">Esmond Y. Kim</h3>
+      <li class="nav-item"></li>  
+        <a class="nav-link active text-primary" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
+        </li>
+      </ul> 
+  </nav>
+</div>
     
   <div class="container">
 
@@ -43,15 +46,19 @@
 
 <!-- Card goes here. -->
     <div class="row">
+      <!-- W3 Validator throws error for class=card being a duplicate element,
+        however omitting the "class" before "card" removes the background image
+        behind the card component. -->
       <section class="col-xl-9 col-sm-9 col-xs-9" class="card">
         <div class="card-header text-primary">
           <h2 style="font-family: Verdana, Arial, 'Lucida Console'">About Me</h2>
         </div>
         <div class="card-body">  
+          <!-- W3 Validator throws error for usting style element twice in line 58, but combining float: left and img px dimensions behind
+            one style element leads to incorrect layout. -->
           <img class="col-xl-3 col-md-3 col-xs-3" style="float: left" src="Assets/Images/EsmondYKimProfile.JPG" alt="Picture of Esmond Y. Kim" style="width:175px;height:200px;">
             <p class="col-xl-9 col-md-9 col-xs-9" style="float: left">I'm an attorney, and I'm transitioning to the computer programming field. I've spent the last 13 years as an attorney. It was amazing to learn how legal code shapes societies. Now, I am excited to learn how computer code shapes our world. I suspect this journey will be every bit as impactful and transformative as my last one. Specifically, it would be exciting to start a coding career as a Jr. Web or Software Developer because I enjoy working with code and solving problems.</p>
               <p class="col-xl-9 col-md-9 col-xs-9" style="float: left">I've spent a good amount of time the past few years really getting to know myself. So, I can say, I know that as a web developer or computer programmer I will find opportunities where I can do good, fulfilling work. I know I'll find environments where I can be myself while working with others to make everyone's life more logical, more intuitive, more meaningful, less stressful and easier to live. Perhaps working with computers can even make the world more, if even marginally, egalitarian, just, stable, safe, secure, and thereby kinder and happier.</p>  
-          </div>
        </div>
     </div>
 
