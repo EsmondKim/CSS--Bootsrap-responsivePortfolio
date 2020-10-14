@@ -10,7 +10,7 @@ The information on the pages is personalized to fit my bio, name, images, and li
 
 Credits:
 (https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7
-[To create the "sticky footer" I used the following websit](https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7)
+[To create the "sticky footer" I used this website, accessed on 10/9/2020.](https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7)
 
 Deployed website:
 [Here is a link to the deployed website](https://esmondkim.github.io/CSS-Bootstrap-responsivePortfolio/) 
