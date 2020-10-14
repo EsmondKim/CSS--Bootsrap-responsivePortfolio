@@ -16,6 +16,6 @@ Deployed website:
 [Here is a link to the deployed website](https://esmondkim.github.io/CSS-Bootstrap-responsivePortfolio/) 
 
 Sceenshots
-![And a screenshot](/Assets/Images/contact.jpg)
 ![And a screenshot](/Assets/Images/index.jpg)
-![And a screenshot](/Assets/Images/Portfolio.jpg)
+![And a screenshot](/Assets/Images/contact.jpg)
+![And a screenshot](/Assets/Images/portfolio.jpg)
