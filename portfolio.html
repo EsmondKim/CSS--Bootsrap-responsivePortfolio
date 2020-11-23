@@ -13,21 +13,18 @@
 </head>
 <body>
 <!-- Nav Header. -->
-<!-- W3 Validator throws errors for use of <h3> element in ul and lack of li elements,
-however, this code was used to utilize the appropriate bootstrap nav bar and to have 
-name displayed in the nav header. -->
 <div class="row ">
   <nav class="col-xl-12 col-md-12 col-xs-12">
     <ul class="nav justify-content-end bg-dark">
-    <h3 class="col-xl-9 col-md-6 col-xs-6 text-primary" style="font-family: Verdana, Arial, 'Lucida Console'">Esmond Y. Kim</h3>
+    <h3 class="col-xl-9 col-md-6 col-xs-6 text-danger" style="font-family: Verdana, Arial, 'Lucida Console'; font-weight: bold;">Esmond Y. Kim</h3>
       <li class="nav-item"></li>  
-        <a class="nav-link active text-primary" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
+        <a class="nav-link active text-danger" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
         </li>
       <li class="nav-item">
-        <a class="nav-link text-primary" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
+        <a class="nav-link text-danger" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
         </li>
       <li class="nav-item">
-        <a class="nav-link text-primary" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
+        <a class="nav-link text-danger" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
         </li>
     </ul>
   </nav>
@@ -45,23 +42,32 @@ name displayed in the nav header. -->
   </div>
 
 <!-- Portfolio card. -->
-<div class="card" style="width: 18rem;">
-    <h2 class=text-primary style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</h2>
-    <img class="card-img-top" src="https://via.placeholder.com/150/000000/FFFFFF/?text=Coming Soon" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Portfolio projects coming soon.</p>
-    </div>
-    <img class="card-img-top" src="https://via.placeholder.com/150/000000/FFFFFF/?text=Coming Soon" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Portfolio projects coming soon.</p>
-    </div>
-    <img class="card-img-top" src="https://via.placeholder.com/150/000000/FFFFFF/?text=Coming Soon" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Portfolio projects coming soon.</p>
-    </div>
+<div class="card" style="width: 18rem; background-color: #ced6e0; padding-bottom: 60px;">
+    <h2 class=text-primary style="font-family: Verdana, Arial, 'Lucida Console'; text-align: center; font-weight: bold;">Portfolio</h2>
+    
+  <div style="border-style: solid; border-color: #007bff; border-radius: 25px;">
+    <h3 class=text-primary style="text-align: center; font-family: Verdana, Arial, 'Lucida Console';">Introversion</h3> 
+    <img class="card-img-top" src="https://user-images.githubusercontent.com/71057611/99136737-598f3880-25ec-11eb-8463-e5c9350cd4b2.png" alt="Picture of the Introversion website.">
+      <div class="card-body">
+        <a class="nav-link active text-primary" href="https://esmondkim.github.io/Project-1/" style="font-family: Verdana, Arial, 'Lucida Console'">A link to the deployed Introversion App.</a>
+        <a class="nav-link active text-primary" href="https://github.com/EsmondKim/Project-1" style="font-family: Verdana, Arial, 'Lucida Console'">A link to the Introversion repository.</a>
+      </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div style="border-style: solid; border-color: #007bff; border-radius: 25px;">
+    <h3 class=text-primary style="text-align: center; font-family: Verdana, Arial, 'Lucida Console';">Random Password Generator</h3> 
+    <img class="card-img-top" style="padding-bottom:5px;" src="Assets/Images/passwordgen.jpg" alt="Picture of the Introversion website.">
+      <div class="card-body">
+        <a class="nav-link active text-primary" href="https://esmondkim.github.io/RandomPasswordGenerator/" style="font-family: Verdana, Arial, 'Lucida Console'">A link to my Random Password Generator App.</a>
+        <a class="nav-link active text-primary" href="https://github.com/EsmondKim/RandomPasswordGenerator" style="font-family: Verdana, Arial, 'Lucida Console'">A link to the Random Password Generator repository.</a>
+      </div>
+   </div>
+
   </div>
  
-
  <!-- Blank row. -->
  <div class="row">
     <div class="col-xl-12 col-md-6 col-xs-6">
@@ -74,9 +80,6 @@ name displayed in the nav header. -->
 </html>
 
 <!-- Footer goes here.  --> 
-<!-- Some footer code taken from website https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7.  --> 
-<!-- Retrieved on 10/09/20.-->
-<!-- This article informed me that the class="fixed-bottom" and class="footer-margin" were available to create a sticky footer.  -->
 <div class="fixed-bottom footer-margin"> 
   <footer class="card-footer bg-dark footer-font-style text-muted footer-position" style="font-family: Verdana, Arial, 'Lucida Console'"><a href="index.html">About Esmond Kim</a>
    </footer>

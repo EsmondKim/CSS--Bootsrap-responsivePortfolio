@@ -1,16 +1,8 @@
 # CSS--Bootsrap-responsivePortfolio
 
-This repository documents the creation of a responsive portfolio.  
-The portfolio includes index.html, portfolio.html, and contact.html pages.
-These pages were created using Bootstrap, hence the pages utilize Bootstrap's row and 12 column grid system.  Where possible, the pages utilize semantic HTML.
-A navbar with working links displays at the top all three pages.
-The layout is responsive, and it includes bootstrap media queries to display left and right borders besides a single column in xs and sm screens.
-The information on the pages is personalized to fit my bio, name, images, and links to email and social media.
-
-
-Credits:
-(https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7
-[To create the "sticky footer" I used this website, accessed on 10/9/2020.](https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7)
+I am passionate about solving problems with computer code, and I hope this portfolio page reflects that.
+I created this portfolio as a student in the Fall 2020 University of Minnesota Full Stack Web Development Coding Boot Camp.  I envision adding to it and continually updating it as long as I am working because I know the best coders are always striving to improve their skills and learn new things.
+When I examine who I am as a person, how I think, how I work, and what I want to contribute to the world, I see myself as a web developer or software developer.  A good friend of mine, who is a succesful back end programmer, told me "The computer is the game, and writing code that works is winning the game."  I love the game, and I am ready to play. 
 
 Deployed website:
 [Here is a link to the deployed website](https://esmondkim.github.io/CSS-Bootstrap-responsivePortfolio/) 

@@ -13,21 +13,18 @@
 </head>
 <body>
 <!-- Nav Header. -->
-<!-- W3 Validator throws errors for use of <h3> element in ul and lack of li elements,
-however, this code was used to utilize the appropriate bootstrap nav bar and to have 
-name displayed in the nav header. -->
 <div class="row ">
     <nav class="col-xl-12 col-md-12 col-xs-12">
       <ul class="nav justify-content-end bg-dark">
-      <h3 class="col-xl-9 text-primary" style="font-family: Verdana, Arial, 'Lucida Console'">Esmond Y. Kim</h3>
+      <h3 class="col-xl-9 text-danger" style="font-family: Verdana, Arial, 'Lucida Console'; font-weight: bold;">Esmond Y. Kim</h3>
         <li class="nav-item"></li>  
-          <a class="nav-link active text-primary" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
+          <a class="nav-link active text-danger" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
           </li>
         <li class="nav-item">
-          <a class="nav-link text-primary" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
+          <a class="nav-link text-danger" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
           </li>
         <li class="nav-item">
-          <a class="nav-link text-primary" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
+          <a class="nav-link text-danger" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
           </li>
       </ul>
     </nav>
@@ -46,7 +43,7 @@ name displayed in the nav header. -->
         <div class="col-xl-4 col-md-4 col-xs-4">
         <div class="form-group" >
             <label for="exampleFormControlInput1">Name</label>
-            <input class="form-control" id="exampleFormControlTextarea1">
+            <input class="form-control" id="exampleFormControlTextarea1" style="background-color: #ced6e0;">
             </div>
         </div>
     </div>
@@ -55,7 +52,7 @@ name displayed in the nav header. -->
         <div class="col-xl-4 col-md-4 col-xs-4">
         <div class="form-group">
             <label for="exampleFormControlInput1">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ekelectronicmail@gmail.com">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your@emailaddress.com" style="background-color: #ced6e0;">
             </div>
         </div>
     </div>
@@ -64,7 +61,7 @@ name displayed in the nav header. -->
         <div class="col-xl-4 col-md-4 col-xs-4">
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" style="background-color: #ced6e0;" rows="3"></textarea>
             </div>
         </div>
     </div>
@@ -73,19 +70,26 @@ name displayed in the nav header. -->
     <button class="btn btn-primary" type="submit">Submit</button>
 </form>
 
+<!-- Blank row. -->
+<div class="row">
+  <div class="col-xl-12 col-md-6 col-xs-6">
+  <br>
+  <p> </p>
+  <br>
+  </div>
+</div>
+
 <!-- Contact card goes here. -->
 <div class="card" style="width: 22rem;">
     <ul class="list-group list-group-flush">
       <a href="mailto:ekelectronicmail@gmail.com" li class="list-group-item">email: ekelectronicmail@gmail.com</a></li>
       <a href="https://www.linkedin.com/in/esmondkim/" li class="list-group-item">LinkedIn Profile</a></li>
-      <a href="https://www.facebook.com/EsmondYKimatE.Y.K.LAWLLC/" li class="list-group-item">Find Me On Facebook</a></li>
+      <a href="https://github.com/EsmondKim" li class="list-group-item">GitHub Profile</a></li>
+      <a href="Assets/Images/EsmondYoungKimResume11.22.20.pdf" download="Assets/Images/EsmondYoungKimResume11.22.20.pdf" li class="list-group-item">A Link To My Resume</a></li>
     </ul>
   </div>
 
 <!-- Footer goes here.  --> 
-<!-- Some footer code taken from website https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7.  --> 
-<!-- Retrieved on 10/09/20.-->
-<!-- This article informed me that the class="fixed-bottom" and class="footer-margin" were available to create a sticky footer.  -->
 <div class="fixed-bottom footer-margin"> 
     <footer class="card-footer bg-dark footer-font-style text-muted footer-position" style="font-family: Verdana, Arial, 'Lucida Console'"><a href="index.html">About Esmond Kim</a>
      </footer>
