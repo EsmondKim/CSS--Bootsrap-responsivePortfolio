@@ -7,35 +7,35 @@
     <style type="text/css">
       body {
         background-image: url("Assets/Images/faint-cubes.png");
+        padding-bottom: 120px;
       }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+  </head>
 <body>
 <!-- Nav Header. Outside of container to span the screen. -->
-<!-- W3 Validator throws errors for use of <h3> element in ul and lack of li elements,
-however, this code was used to utilize the appropriate bootstrap nav bar and to have 
-name displayed in the nav header. -->
 <div class="row ">
-  <nav class="col-xl-12">
+  <nav class="col-xl-12 col-md-12 col-xs-12">
     <ul class="nav justify-content-end bg-dark">
-      <h3 class="col-xl-9 text-primary" style="font-family: Verdana, Arial, 'Lucida Console'">Esmond Y. Kim</h3>
+      <h3 class="col-xl-9 text-danger" style="font-family: 'Stalinist One', cursive, Verdana, sans-serif;">Esmond Y. Kim</h3>
       <li class="nav-item"></li>  
-        <a class="nav-link active text-primary" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
+        <a class="nav-link active text-danger" href="contact.html" style="font-family: Verdana, Arial, 'Lucida Console'">Contact</a>
         </li>
       <li class="nav-item">
-        <a class="nav-link text-primary" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
+        <a class="nav-link text-danger" href="portfolio.html" style="font-family: Verdana, Arial, 'Lucida Console'">Portfolio</a>
         </li>
       <li class="nav-item">
-        <a class="nav-link text-primary" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
+        <a class="nav-link text-danger" href="index.html" style="font-family: Verdana, Arial, 'Lucida Console'">About</a>
         </li>
       </ul> 
   </nav>
 </div>
-    
-  <div class="container">
 
-<!-- Blank row. -->
+  <!--Start of Bootstrap Container-->
+  <div class="container">
+  <!-- Blank row. -->
   <div class="row">
     <div class="col-xl-12 col-md-6 col-xs-6">
     <br>
@@ -44,42 +44,64 @@ name displayed in the nav header. -->
     </div>
   </div>
 
-<!-- Card goes here. -->
+  <!-- Cards go here. -->
     <div class="row">
-      <!-- W3 Validator throws error for class=card being a duplicate element,
-        however omitting the "class" before "card" removes the background image
-        behind the card component. -->
-      <section class="col-xl-9 col-sm-9 col-xs-9" class="card">
+      <section class="col-xl-6 col-sm-6 col-xs-6; card" style="float: left; background-color: #ced6e0; border-style: solid; border-radius: 25px;">
         <div class="card-header text-primary">
-          <h2 style="font-family: Verdana, Arial, 'Lucida Console'">About Me</h2>
+          <h2 style="font-family: 'Stalinist One', cursive, Verdana, sans-serif">About Me</h2>
         </div>
         <div class="card-body">  
-          <!-- W3 Validator throws error for usting style element twice in line 58, but combining float: left and img px dimensions behind
-            one style element leads to incorrect layout. -->
-          <img class="col-xl-3 col-md-3 col-xs-3" style="float: left" src="Assets/Images/EsmondYKimProfile.JPG" alt="Picture of Esmond Y. Kim" style="width:175px;height:200px;">
-            <p class="col-xl-9 col-md-9 col-xs-9" style="float: left">I'm an attorney, and I'm transitioning to the computer programming field. I've spent the last 13 years as an attorney. It was amazing to learn how legal code shapes societies. Now, I am excited to learn how computer code shapes our world. I suspect this journey will be every bit as impactful and transformative as my last one. Specifically, it would be exciting to start a coding career as a Jr. Web or Software Developer because I enjoy working with code and solving problems.</p>
-              <p class="col-xl-9 col-md-9 col-xs-9" style="float: left">I've spent a good amount of time the past few years really getting to know myself. So, I can say, I know that as a web developer or computer programmer I will find opportunities where I can do good, fulfilling work. I know I'll find environments where I can be myself while working with others to make everyone's life more logical, more intuitive, more meaningful, less stressful and easier to live. Perhaps working with computers can even make the world more, if even marginally, egalitarian, just, stable, safe, secure, and thereby kinder and happier.</p>  
-       </div>
-    </div>
+        <p>Full stack web developer leveraging professional experience gained as a practicing attorney.  Currently working on a team of attorneys, communicating, teaching, and achieving client goals.  Passionate about learning and growing, as demonstrated by enrollment in the University of Minnesota Full Stack Coding Boot Camp, fall 2020 cohort.  Maintaining an A average learning HTML, CSS, JavaScript, and Git.  Motivated to build and create things as a web or software developer.  I run towards the chance to turn the abstract and theoretical into concrete solutions using computer code. Offers hard earned professionalism, communication skills, an ability to learn quickly, and a driven pursuit of excellence to any team.</p>  
+        </div>
+      </section>
 
-<!-- Blank row. -->
+       <section class="col-xl-6 col-md-1 col-sm-1 col-xs-1; card" style="float:left; background-color: #ced6e0; border-style: solid; border-radius: 25px; padding-bottom: 25px;">
+        <div class="card-header text-primary">
+          <h2 style="font-family: 'Stalinist One', cursive, Verdana, sans-serif">Languages</h2>
+        </div>
+        <div class="card-body;" style="background-image: url('Assets/Images/BannerOpaquePic.JPG'); width:500px;height:500x; opacity: 0.55;">  
+        <ul style="float: center;">
+          <li style="opacity: 1; font-size: 20px; font-family: 'Stalinist One', cursive, Verdana, sans-serif; color: red;">HTML</li>
+          <li style="opacity: 1; font-size: 20px; font-family: 'Stalinist One', cursive, Verdana, sans-serif; color: red;">CSS</li>
+          <li style="opacity: 1; font-size: 20px; font-family: 'Stalinist One', cursive, Verdana, sans-serif; color: red;">JavaScript</li>
+          <li style="opacity: 1; font-size: 20px; font-family: 'Stalinist One', cursive, Verdana, sans-serif; color: red;">Bootstrap</li>
+          <li style="opacity: 1; font-size: 20px; font-family: 'Stalinist One', cursive, Verdana, sans-serif; color: red;">API's</li>
+          <li style="opacity: 1; font-size: 20px; font-family: 'Stalinist One', cursive, Verdana, sans-serif; color: red;">jQuery</li>
+          <li style="opacity: 1; font-size: 20px; font-family: 'Stalinist One', cursive, Verdana, sans-serif; color: red;">nodeJS</li>
+          <li style="opacity: 1; font-size: 20px; font-family: 'Stalinist One', cursive, Verdana, sans-serif; color: red;">GIT</li>
+          <li style="opacity: 1; font-size: 20px; font-family: 'Stalinist One', cursive, Verdana, sans-serif; color: red;">Command Line Interface</li>
+        </ul>  
+        </div>
+      </section>    
+    </div>
+       
+    <!-- Blank row. -->
     <div class="row">
       <div class="col-xl-12 col-md-6 col-xs-6">
-        <br>
-        <p> </p>
         <br>
       </div>
     </div>
 
-  <!-- Footer goes here.  --> 
-  <!-- Some footer code taken from website https://medium.com/@josephcardillo/how-to-add-a-sticky-footer-using-bootstrap-ad7cf69838e7. --> 
-  <!-- Retrieved on 10/09/20. -->
-  <!-- This article informed me that the class="fixed-bottom" and class="footer-margin" were available to create a sticky footer. -->
+    <!-- API block for date/time. -->
+    <div class="row">
+      <section class="col-xl-12 col-sm-6 col-xs-6; card" style="float: left; background-color: #ced6e0; border-style: solid; border-radius: 25px;">
+        <div class="card-header text-primary">
+          <p id="timeGreeting" style="text-align: center; font-family: Verdana, Arial, 'Lucida Console'">Placeholder greeting</p>
+        </div>
+        <div class="card-body">  
+        <p id="dateTime" style="text-align: center; color: red;">Placeholder Date Time</p>  
+        </div>
+      </section>
+    
+  <!-- Footer.--> 
     <div class="fixed-bottom footer-margin"> 
      <footer class="card-footer bg-dark footer-font-style text-muted footer-position" style="font-family: Verdana, Arial, 'Lucida Console'"><a href="index.html">About Esmond Kim</a>
       </footer>
     </div>
-    
-    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="indexScript.js"></script>
   </body>
 </html>
